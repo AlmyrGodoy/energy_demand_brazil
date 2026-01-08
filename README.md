@@ -37,6 +37,7 @@ Eventos estruturais relevantes são capturados por variáveis dummy, tais como:
 
 ## 🗂️ Estrutura de Diretórios do Projeto
 
+```
 energy-demand-econometrics/
 │
 ├── README.md
@@ -75,6 +76,7 @@ energy-demand-econometrics/
 │
 └── scripts/
     └── run_pipeline.py
+```
 
 ## 📥 Fontes de Dados
 
