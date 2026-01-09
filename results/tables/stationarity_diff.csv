@@ -1,0 +1,9 @@
+Variável,Teste,Estatística,p-valor,H0
+demanda_energia,ADF,-5.405766925777538,3.2940041950749745e-06,Estacionária
+demanda_energia,KPSS,0.08563589710738483,0.1,Estacionária
+tarifa_energia_real,ADF,-4.911436836726007,3.3130114958499374e-05,Estacionária
+tarifa_energia_real,KPSS,0.03556716438300785,0.1,Estacionária
+pib_real,ADF,-3.9756647442905395,0.0015434376283887709,Estacionária
+pib_real,KPSS,0.09225882476204944,0.1,Estacionária
+importacoes_petroleo,ADF,-11.39429936888491,7.927629436012895e-21,Estacionária
+importacoes_petroleo,KPSS,0.06721765603324514,0.1,Estacionária
