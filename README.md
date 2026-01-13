@@ -2,14 +2,22 @@
 
 ## 📌 Descrição do Projeto
 
-Este projeto tem como objetivo analisar, modelar e prever a demanda de energia elétrica no setor industrial brasileiro, utilizando técnicas de econometria aplicada e ciência de dados. O trabalho foi desenvolvido a partir de dados oficiais do IPEADATA, com foco na construção de um pipeline reprodutível de coleta, tratamento, transformação e análise de séries temporais econômicas.
+Este projeto é uma ampliação do meu TCC do curso de Ciências Econômicas - UFSM - Palmeira das Missões, que foi orientado pelo Doutor Cézar Augusto Pereira dos Santos e avaliado pela banca composta pelos professores Doutores Nilson Luiz Costa e Tanice Andreatta, no qual, foi apresentado no dia 16/12/2024 e que tive a felicidade de obter nota máxima. 
 
-O projeto é uma evolução metodológica de um Trabalho de Conclusão de Curso (TCC, está na pasta docs o arquivo antigo), reorganizado segundo boas práticas de Engenharia de Dados e Ciência de Dados, com versionamento em GitHub e estrutura modular de código.
-
----
+O projeto é uma evolução metodológica do meu TCC (O arquivo antigo está na pasta docs), reorganizado segundo boas práticas de Engenharia de Dados e Ciência de Dados, com versionamento em GitHub e estrutura modular de código.
 
 ## 🎯 Objetivo Geral
 
+Este projeto tem como objetivo analisar, modelar e prever a demanda de energia elétrica no setor industrial brasileiro, utilizando técnicas de econometria aplicada e ciência de dados. O trabalho foi desenvolvido a partir de dados oficiais do IPEADATA, com foco na construção de um pipeline reprodutível de coleta, tratamento, transformação e análise de séries temporais econômicas.
+
+---
+
+## 🎯 Objetivos Específicso
+
+## Engenharia de Dados:
+
+- Estruturar código
+- 
 Estimar e analisar a demanda de energia elétrica industrial no Brasil, investigando sua relação com:
 - Nível de atividade econômica (PIB)
 - Tarifa média de energia elétrica
