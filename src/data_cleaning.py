@@ -1,13 +1,15 @@
-import pandas as pd
+import sys
 from pathlib import Path
+
+PROJECT_ROOT = Path("..").resolve()
+sys.path.append(str(PROJECT_ROOT))
+
+import pandas as pd
 from functools import reduce
 
-# =========================
-# Paths do projeto
-# =========================
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_RAW = BASE_DIR / "data" / "raw"
-DATA_INTERIM = BASE_DIR / "data" / "interim"
+from src.config import PROJECT_ROOT, DATA_INTERIM
+
+DATA_RAW = PROJECT_ROOT / "data" / "raw"
 DATA_INTERIM.mkdir(parents=True, exist_ok=True)
 
 # =========================

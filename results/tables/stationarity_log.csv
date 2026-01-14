@@ -1,9 +1,9 @@
-Variável,Teste,Estatística,p-valor,H0
-demanda_energia,ADF,-1.3790541619708463,0.5922756099750304,Não estacionária
-demanda_energia,KPSS,2.1721708235353936,0.01,Não estacionária
-tarifa_energia_real,ADF,-2.2726535904307097,0.18093944905472692,Não estacionária
-tarifa_energia_real,KPSS,1.333349920780765,0.01,Não estacionária
-pib_real,ADF,-1.0341946771191037,0.7405892210517655,Não estacionária
-pib_real,KPSS,2.3326727523933513,0.01,Não estacionária
-importacoes_petroleo,ADF,-1.6241328604466567,0.47056327074259235,Não estacionária
-importacoes_petroleo,KPSS,1.6294023877049855,0.01,Não estacionária
+variavel,teste,estatistica,p_valor,lags,n_obs,decisão
+demanda_energia,ADF,-1.3790541619708485,0.5922756099750293,15,329.0,Não estacionária
+demanda_energia,KPSS,2.1721708235353936,0.01,11,,Não estacionária
+importacoes_petroleo,ADF,-1.6241328604466578,0.4705632707425918,1,343.0,Não estacionária
+importacoes_petroleo,KPSS,1.6294023877049855,0.01,11,,Não estacionária
+pib_real,ADF,-1.0341946771190993,0.7405892210517672,13,331.0,Não estacionária
+pib_real,KPSS,2.3326727523933513,0.01,11,,Não estacionária
+tarifa_energia_real,ADF,-2.272653590430711,0.18093944905472642,13,331.0,Não estacionária
+tarifa_energia_real,KPSS,1.333349920780765,0.01,11,,Não estacionária

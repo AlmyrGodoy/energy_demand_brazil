@@ -1,12 +1,15 @@
-import pandas as pd
-import numpy as np
+import sys
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-INTERIM_DATA_PATH = BASE_DIR / "data" / "interim"
-PROCESSED_DATA_PATH = BASE_DIR / "data" / "processed"
-PROCESSED_DATA_PATH.mkdir(parents=True, exist_ok=True)
+PROJECT_ROOT = Path("..").resolve()
+sys.path.append(str(PROJECT_ROOT))
 
+import pandas as pd
+import numpy as np
+
+from src.config import DATA_INTERIM, DATA_PROCESSED
+
+DATA_PROCESSED.mkdir(parents=True, exist_ok=True)
 
 def create_event_dummies(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
@@ -26,7 +29,7 @@ def create_event_dummies(df: pd.DataFrame) -> pd.DataFrame:
 
 if __name__ == "__main__":
 
-    data = pd.read_csv(INTERIM_DATA_PATH / "base_consolidada_real.csv")
+    data = pd.read_csv(DATA_INTERIM / "base_consolidada_real.csv")
     data["date"] = pd.to_datetime(data["date"])
 
     # Logs
@@ -51,7 +54,7 @@ if __name__ == "__main__":
     ]
 
     data[final_columns].to_csv(
-        PROCESSED_DATA_PATH / "base_analitica.csv",
+        DATA_PROCESSED / "base_analitica.csv",
         index=False
     )
 

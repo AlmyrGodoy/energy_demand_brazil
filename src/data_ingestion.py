@@ -1,10 +1,15 @@
-import pandas as pd
+import sys
 from pathlib import Path
+
+PROJECT_ROOT = Path("..").resolve()
+sys.path.append(str(PROJECT_ROOT))
+
+import pandas as pd
 from ipeadatapy import timeseries
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_RAW = BASE_DIR / "data" / "raw"
+from src.config import PROJECT_ROOT
 
+DATA_RAW = PROJECT_ROOT / "data" / "raw"
 DATA_RAW.mkdir(parents=True, exist_ok=True)
 
 #Definir função para fazer dowload dos dados e salvar como csv na pasta data/raw
