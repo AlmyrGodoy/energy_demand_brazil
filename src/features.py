@@ -29,24 +29,26 @@ def create_event_dummies(df: pd.DataFrame) -> pd.DataFrame:
 
 if __name__ == "__main__":
 
+    # ---------
+    # Load
+    # ---------
     data = pd.read_csv(DATA_INTERIM / "base_consolidada_real.csv")
     data["date"] = pd.to_datetime(data["date"])
 
-    # Logs
-    data["ln_demanda"] = np.log(data["demanda_energia"])
-    data["ln_tarifa"] = np.log(data["tarifa_energia_real"])
-    data["ln_pib"] = np.log(data["pib_real"])
-    data["ln_importacoes"] = np.log(data["importacoes_petroleo"])
-
-    # Dummies
+    # ---------
+    # Dummies estruturais
+    # ---------
     data = create_event_dummies(data)
 
+    # ---------
+    # Seleção final (dados em nível)
+    # ---------
     final_columns = [
         "date",
-        "ln_demanda",
-        "ln_tarifa",
-        "ln_pib",
-        "ln_importacoes",
+        "demanda_energia",
+        "tarifa_energia_real",
+        "pib_real",
+        "importacoes_petroleo",
         "d_2001",
         "d_2006",
         "d_2008",
