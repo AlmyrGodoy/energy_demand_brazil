@@ -80,3 +80,34 @@ def residuals(results) -> pd.Series:
     Retorna os resíduos do modelo.
     """
     return results.resid
+
+def apply_robust_errors(results, cov_type: str = "HC1", maxlags: int | None = None):
+    """
+    Aplica erros-padrão robustos ao modelo estimado.
+
+    Parâmetros
+    ----------
+    results : RegressionResults
+        Modelo MQO estimado.
+    cov_type : str
+        Tipo de matriz robusta:
+        - "HC0", "HC1", "HC2", "HC3" (White)
+        - "HAC" (Newey-West)
+    maxlags : int, opcional
+        Número de defasagens para HAC.
+
+    Retorno
+    -------
+    RegressionResults
+        Modelo com erros-padrão robustos.
+    """
+
+    if cov_type == "HAC":
+        if maxlags is None:
+            raise ValueError("Para HAC é necessário informar maxlags.")
+        return results.get_robustcov_results(
+            cov_type="HAC",
+            maxlags=maxlags
+        )
+
+    return results.get_robustcov_results(cov_type=cov_type)
