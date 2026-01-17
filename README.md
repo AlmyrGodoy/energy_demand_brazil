@@ -31,7 +31,6 @@ Este projeto tem como objetivo analisar, modelar e prever a demanda de energia e
 
 ### ARIMA/ARIMAX/SARIMA
 - Prever a demanda de Energia Elétrica Industrial através da metodologia ARIMA/Box Jenkins e Derivados
-- 
 ---
 
 ## 📚 Fundamentação Metodológica
