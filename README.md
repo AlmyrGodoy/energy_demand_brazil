@@ -17,12 +17,12 @@ Este projeto tem como objetivo analisar, modelar e prever a demanda de energia e
 ## Engenharia de Dados:
 
 - Estruturar código
-- 
+
 Estimar e analisar a demanda de energia elétrica industrial no Brasil, investigando sua relação com:
 - Nível de atividade econômica (PIB)
-- Tarifa média de energia elétrica
-- Preço de bens substitutos (derivados de petróleo)
-- Choques estruturais e eventos extraordinários (Apagão elétrico de 2001, erro estatístico de 2006, Crise financeira e econômica de 2008...)
+- Tarifa média de energia elétrica industrial 
+- Índice de Preço de Importações dos derivados de petróleo
+- Choques estruturais e eventos extraordinários (Apagão elétrico de 2001, erro estatístico de 2006, Crise financeira e econômica de 2008 e Pandemia de 2020)
 
 ---
 
@@ -115,7 +115,6 @@ O fluxo do projeto segue as seguintes etapas:
 
 3. **Transformações econômicas (`features.py`)**
    - Deflação de variáveis monetárias pelo IGP-DI
-   - Transformação logarítmica
    - Criação de variáveis dummy para choques estruturais
 
 4. **Análises econométricas**
@@ -135,10 +134,8 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias e bibliotecas:
 - **statsmodels** – estimação de modelos econométricos (MQO, testes estatísticos, diagnósticos)  
 - **scipy** – suporte a métodos estatísticos e testes complementares  
 - **patsy** – construção de matrizes de regressão e especificação de modelos  
-- **scikit-learn** – ferramentas auxiliares para validação e análise (quando aplicável)  
 - **matplotlib** – visualização de séries temporais e resultados econométricos  
-- **seaborn** – visualizações estatísticas complementares  
-- **ipeadatapy** – extração automatizada de dados macroeconômicos via API do IPEA  
+=- **ipeadatapy** – extração automatizada de dados macroeconômicos via API do IPEA  
 - **Git e GitHub** – controle de versão, organização e reprodutibilidade do projeto
 
 
