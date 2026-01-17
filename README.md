@@ -8,22 +8,30 @@ O projeto é uma evolução metodológica do meu TCC (O arquivo antigo está na 
 
 ## 🎯 Objetivo Geral
 
-Este projeto tem como objetivo analisar, modelar e prever a demanda de energia elétrica no setor industrial brasileiro, utilizando técnicas de econometria aplicada e ciência de dados. O trabalho foi desenvolvido a partir de dados oficiais do IPEADATA, com foco na construção de um pipeline reprodutível de coleta, tratamento, transformação e análise de séries temporais econômicas.
+Este projeto tem como objetivo analisar, modelar e prever a demanda de energia elétrica no setor industrial brasileiro, utilizando técnicas de econometria aplicada, engenharia e ciência de dados. O trabalho foi desenvolvido a partir de dados oficiais do IPEADATA, com foco na construção de um pipeline reprodutível de coleta, tratamento, transformação e análise de séries temporais econômicas.
 
 ---
 
-## 🎯 Objetivos Específicso
+## 🎯 Objetivos Específicos
 
 ## Engenharia de Dados:
 
-- Estruturar código
+- ETL
+- Estruturar código reproduzível
+- Pipeline de dados
+    
+## Ciência de Dados e Econometria:
 
-Estimar e analisar a demanda de energia elétrica industrial no Brasil, investigando sua relação com:
+### Regressão Linear Múltipla (OLS/MQO)
+- Estimar a relação da demanda de energia elétrica industrial no Brasil com MQO, através das variáveis Independentes:
 - Nível de atividade econômica (PIB)
 - Tarifa média de energia elétrica industrial 
-- Índice de Preço de Importações dos derivados de petróleo
+- Índice de Preço de Importações dos derivados de petróleo (Produto Substituto)
 - Choques estruturais e eventos extraordinários (Apagão elétrico de 2001, erro estatístico de 2006, Crise financeira e econômica de 2008 e Pandemia de 2020)
 
+### ARIMA/ARIMAX/SARIMA
+- Prever a demanda de Energia Elétrica Industrial através da metodologia ARIMA/Box Jenkins e Derivados
+- 
 ---
 
 ## 📚 Fundamentação Metodológica
@@ -46,7 +54,7 @@ Eventos estruturais relevantes são capturados por variáveis dummy, tais como:
 ## 🗂️ Estrutura de Diretórios do Projeto
 
 ```
-energy-demand-econometrics/
+energy-demand/
 │
 ├── README.md
 ├── requirements.txt
@@ -117,7 +125,7 @@ O fluxo do projeto segue as seguintes etapas:
    - Deflação de variáveis monetárias pelo IGP-DI
    - Criação de variáveis dummy para choques estruturais
 
-4. **Análises econométricas**
+4. **Análises econométricas (`notebooks`)**
    - Testes de estacionariedade
    - Especificação e estimação de modelos
    - Diagnósticos estatísticos
